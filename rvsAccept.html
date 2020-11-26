@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type='text/javascript'>
+function redirectRvHome()
+{
+var rvsMgrHomeCookie = "http://www.zongora-pianino.hu";
+    createCookie('rvscookieconsent', '1');
+   window.location=rvsMgrHomeCookie;
+}
+
+function createCookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+}
+
+</script>
+</head>
+<body>
+<h3>COOKIE CONSENT</h3>
+Europe requires that we alert our visitors if we use cookies on our website.<br/>
+We only use cookies for traffic data purposes and do not store any personal data.<br/>
+For more information, please visit our Privacy Policy. <br/>
+To use our website, <a href="javascript:void(0);" onclick="redirectRvHome();">click here to consent to accepting cookies.</a><br/>
+To <a href="http://www.cookielaw.org">Eu cookie law website.</a>
+</body>
+</html>

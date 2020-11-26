@@ -1,0 +1,292 @@
+/****  melody_Keys  ****/
+
+
+
+ul.rvnavigator {
+
+	margin: 0px;
+
+	padding: 2px;
+
+	list-style: none;
+
+	position: relative;
+
+	z-index:99;
+
+}
+
+ 
+
+ul.rvnavigator li{
+
+	margin: 0px;
+
+	padding: 0px;
+
+	text-align: left;
+
+	list-style: none;
+
+	position: relative;
+
+} 
+
+ul.rvnavigator li a {text-decoration: none;  word-wrap: break-word;}
+
+
+
+ul.rvnavigator a{
+
+	display: block;
+
+	padding: 5px 0px 5px 20px;
+
+	border-width: 1px;
+
+	border-color: #e4e1e4 #646164 #646164 #e4e1e4;
+
+	border-style: solid;
+
+	color:#515051;		
+
+}
+
+ul.rvnavigator li a:hover{
+
+	color:#e4e1e4;
+
+	background-color:#8C888C;
+
+	border-color: #646164 #e4e1e4 #e4e1e4 #646164;	
+
+}
+
+ul.rvnavigator a.current{
+
+	display: block;
+
+	padding: 5px 0px 5px 20px;
+
+	border-width: 1px;
+
+	border-color: #646164 #e4e1e4 #e4e1e4 #646164;
+
+	border-style: solid;
+
+	color:#e4e1e4;
+
+	background-color:#8C888C;
+
+}
+
+
+
+
+
+/*  css for submenu */
+
+
+
+
+
+ul.rvnavigator ul {
+
+	top: 0; 
+
+	left: 100%; 
+
+	display: none; /*visibility: hidden;*/
+
+	position: absolute;
+
+	padding:0px; /* Change */
+
+	z-index:25;
+
+	width: auto; 
+
+	margin: 0;
+
+	list-style: none;
+
+	
+
+	border: #646164 1px solid; /*subframe*/
+
+	background-color: #C9C3C9;
+
+	text-indent: 0px; /* Change */
+
+	cursor:pointer;
+
+}
+
+ul.rvnavigator ul ul{
+
+	width: 150px; /* Sub Menu Width */ 
+
+	word-wrap: break-word;
+
+	top: 0; 
+
+	left: 100%; 
+
+	background-color: #C9C3C9;
+
+}
+
+ul.rvnavigator ul li {
+
+	word-wrap: break-word;
+
+	text-align: left;
+
+	border-bottom: 1px solid #8C888C;
+
+	margin: 0px;
+
+	padding: 0px;
+
+	width:150px;
+
+	background-image:none;
+
+}
+
+
+
+/* 1st Submenu */
+
+ul.rvnavigator li:hover li a {
+
+	white-space:normal;
+
+	
+
+	color: #515051;
+
+	text-decoration: none;
+
+	position: relative;
+
+	display:block;
+
+	padding:3px;
+
+}
+
+/* 1st Submenu Hover  */
+
+ul.rvnavigator li:hover li a:hover {
+
+	 
+
+	color: #000000;
+
+	text-decoration:none; 
+
+	background-color:#8C888C;
+
+	position: relative;
+
+	display:block;
+
+	padding:3px;
+
+}
+
+
+
+
+
+/* 2nd Submenu */
+
+ul.rvnavigator li:hover li:hover li a {
+
+	 
+
+	color: #515051; 
+
+	text-decoration: none;
+
+	position: relative;
+
+	display:block;
+
+	padding:3px;
+
+}
+
+/* 2nd Submenu Hover  */
+
+ul.rvnavigator li:hover li:hover li a:hover{
+
+	 
+
+	color: #000000;
+
+	text-decoration:none; 
+
+	background-color:#8C888C;
+
+	position: relative;
+
+	display:block;
+
+	padding:3px;
+
+}
+
+/* Hover Function - Do Not Move */
+
+ul.rvnavigator li:hover ul ul,ul.rvnavigator li:hover ul ul ul {
+
+	 display: none; 
+
+ }
+
+ul.rvnavigator li:hover ul,ul.rvnavigator ul li:hover ul,ul.rvnavigator ul ul li:hover ul { 
+
+	display: block; 
+
+}
+
+.rvarrowsubmenu{ 
+
+	float:right;
+
+	padding-left:5px; 
+
+}
+
+ul.rvnavigator li:hover li a.arrowOne {
+
+	background-image:url(images/red_arrow.gif); 
+
+	background-position:right bottom; 
+
+	background-repeat:no-repeat;
+
+}
+
+ul.rvnavigator li:hover li a.arrowsubOne {
+
+	background-image:url(images/red_linkarrow.gif); 
+
+	background-position:right center; 
+
+	background-repeat:no-repeat;
+
+}
+
+.item .fwdarr {
+
+	right: 7px;
+
+	top: 5px; 
+
+	position: absolute;	
+
+}
+
