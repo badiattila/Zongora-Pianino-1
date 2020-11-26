@@ -1,0 +1,44 @@
+.company{
+	font-family: verdana,arial,helvetica;
+	font-size: 15px;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.slogan {
+	font-family: verdana,arial,helvetica;
+	font-size: 11px;
+	color:#ffffff;
+	font-weight: bold;
+}
+
+.magin {
+	padding:5px;
+}
+table { 
+	font-size:100%;
+} 
+body { font-size:76%;
+	margin:0;
+	padding:0; 
+	background-color:#000000;
+	color:#000000;
+}
+
+a:link {color:#770D0C; text-decoration: underline;}
+a:visited {color:#770D0C; text-decoration: underline;}
+a:hover {color:#d1020b; text-decoration: underline;}
+a:active {color:#d1020b; text-decoration: underline;}
+
+
+.menu {background-color:#c9c3c9;}
+.bottom {background-image:url(images/bottom.jpg);
+		 background-repeat:repeat-x;
+		 background-position:bottom;}
+.mutop {background-image:url(images/mutop.jpg);
+		 background-repeat:repeat-x;}
+.colorbody {background-color:#e8e7e8;}
+
+.bgtop {background-image:url(images/top.jpg);
+		 background-repeat:repeat-x;}
+.lr {background-color:#9e999d;}

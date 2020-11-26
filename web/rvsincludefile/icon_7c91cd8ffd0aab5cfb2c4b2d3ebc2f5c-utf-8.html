@@ -1,0 +1,31 @@
+<table cellpadding="0" cellspacing="0" width="100%"><tr style="cursor:pointer"><td>
+	<script type="text/javascript">
+	//<![CDATA[
+    	var SubjectLine = 'Check out the '+top.document.title+'';
+    	var BodyText = 'I thought you might be interested in the '+top.document.title+' You can view it at '+top.location.href+'';
+    	var Message = '<a class="contact" href="mailto:?SUBJECT=' + SubjectLine + '&BODY=' + BodyText + '">';
+    	Message += '<img src="http://zongora-pianino.hu/images/pfbe.gif" border="0"  title="E-mail küldése egy barátnak az oldalról"  alt="E-mail küldése egy barátnak az oldalról"></a>';
+    	var MessageIE = '<a href="mailto:?SUBJECT=\'' + SubjectLine + '\'&BODY=' + BodyText + '">';
+    	MessageIE += '<img src="http://zongora-pianino.hu/images/pfbe.gif" border="0" title="E-mail küldése egy barátnak az oldalról" lt="E-mail küldése egy barátnak az oldalról" width="22" height="22" hspace="4" style="cursor:pointer" border="0"/></a>';
+		
+    	if (document.all) {
+    		document.write(MessageIE);
+    	} else {
+    		document.write(Message);
+    	}
+	//]]>
+	</script>
+</td><td><img src="http://zongora-pianino.hu/images/ppbe.gif" width="22" height="22" hspace="4" border="0" title="Oldal nyomtatása" alt="Oldal nyomtatása" onclick="window.print();return false;" /></td><td><img src="http://zongora-pianino.hu/images/afbe.gif" width="22"  height="22" hspace="4" border="0" title="Hozzáadás a kedvencekhez" alt="Hozzáadás a kedvencekhez"  onclick="chkWindowjs();"/>
+         <script type="text/javascript">
+            //<![CDATA[
+                     function chkWindowjs() {
+                         if (window.sidebar) {
+                             window.sidebar.addPanel(document.title,location.href,'');
+                         } else if(window.external) {
+                             window.external.AddFavorite(location.href,document.title);
+                         } else if(window.opera&&window.print) { 
+                                 return true; 
+                         }
+                   }
+              //]]>
+        </script></td></tr></table>
